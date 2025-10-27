@@ -70,6 +70,9 @@ Alternatively, you can install it directly from GitHub:
 * Change Log
 Major version numbers coincide with Denote major versions.
 
+** Version 4.1
+- Minor compatibility issues with Denote 4.1. No upgrades.
+
 ** Version 4.01
 - Various bug fixes and refactoring
 - Added ~denote-explore-random-signature~ function
