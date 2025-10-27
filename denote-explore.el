@@ -888,7 +888,7 @@ Files which have keywords listed in
 				links-xref)))
 	 (target (mapcar
 		  (lambda (str)
-		    (when (string-match denote-id-regexp str)
+		    (when (string-match denote-date-identifier-regexp str)
 		      (match-string 0 str)))
 		  links))
 	 ;; Zip this lists as an alist (((source . "a") (target "b")) (...))
@@ -1285,7 +1285,7 @@ Optionally analyse TEXT-ONLY files."
 					       (replace-regexp-in-string "circle" "square" x))
 					     dot-header-all))))
 	 (dot-content '())
-	 (nb-core (when (string-match denote-id-regexp type) (match-string 0 type))))
+	 (nb-core (when (string-match denote-date-identifier-regexp type) (match-string 0 type))))
     ;; Nodes
     (dolist (node nodes)
       (let* ((id (cdr (assoc 'id node)))
